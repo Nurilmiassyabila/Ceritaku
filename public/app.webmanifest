@@ -1,0 +1,63 @@
+{
+    "id": "/?source=pwa#/",
+    "scope": "/",
+    "start_url": "/?source=pwa#/",
+    "name": "Ceritaku App",
+    "short_name": "Ceritaku",
+    "description": "Aplikasi berbagi cerita dengan arsitektur SPA. Memungkinkan pengguna menambahkan, melihat, dan menyimpan cerita secara mudah.",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#d97706",
+    "icons": [
+      {
+        "src": "images/icons/icon.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any"
+      },
+      {
+        "src": "images/icons/icon.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Tambah Cerita",
+        "short_name": "Tambah",
+        "description": "Menambahkan cerita baru.",
+        "url": "/?source=pwa#/new",
+        "icons": [
+          {
+            "src": "images/icons/add-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+          },
+          {
+            "src": "images/icons/add-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+          }
+        ]
+      },
+      {
+        "name": "Cerita Tersimpan",
+        "short_name": "Tersimpan",
+        "description": "Lihat cerita yang disimpan.",
+        "url": "/?source=pwa#/bookmark",
+        "icons": [
+          {
+            "src": "images/icons/bookmark-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+          },
+          {
+            "src": "images/icons/bookmark-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+          }
+        ]
+      }
+    ]
+  }

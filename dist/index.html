@@ -1,0 +1,57 @@
+<!doctype html><html lang="id"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="description" content="CeritaKu - Aplikasi berbagi cerita dengan lokasi"/><title>CeritaKu - Berbagi Cerita Anda</title><link rel="manifest" href="app.webmanifest"><link rel="icon" href="/icons/icon.png"><meta name="theme-color" content="#ff8c42"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><style>.skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #ff8c42;
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 100;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: top 0.3s;
+    }
+    .skip-link:focus {
+      top: 10px;
+    }
+
+    .loading-spinner {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(255,255,255,0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .loading-spinner.active {
+      display: flex;
+    }
+    .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #ff8c42;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.4s ease-in forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Toast Container */
+    .toast-container {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      z-index: 10000;
+    }</style><script defer="defer" src="/app.bundle.js"></script><link href="/app.css" rel="stylesheet"></head><body><a href="#main-content" class="skip-link">Lewati ke konten utama</a><div id="app"><header class="app-header" id="app-header"><div class="container"><div class="header-content"><div class="logo"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#FF8C42"/><path d="M20 10 L15 20 L20 25 L25 20 Z" fill="#fff"/></svg><h1 class="logo-text">CeritaKu</h1></div><nav class="nav-menu" id="nav-menu" aria-label="Navigasi utama"></nav></div></div></header><main id="main-content" class="main-content fade-in" tabindex="-1" aria-live="polite"></main><footer class="app-footer"><div class="container"><p>&copy; 2025 CeritaKu. <span lang="en">Share your story, share inspiration.</span></p></div></footer></div><div id="loading-spinner" class="loading-spinner" role="status" aria-live="polite" aria-label="Memuat halaman"><div class="spinner"></div></div><div id="toast-container" class="toast-container" role="alert" aria-live="assertive"></div></body></html>
